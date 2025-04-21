@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore India | Flight Booking</title>
+    <link rel="stylesheet" href="flights.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-plane-departure"></i>
+                <h1>Explore India</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/dashboard/dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-map-marked-alt"></i> Destinations</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i> My Trips</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="flight-search">
+            <div class="container">
+                <h1><i class="fas fa-plane"></i> Book Flights</h1>
+                <div class="search-filters">
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label for="trip-type">Trip Type</label>
+                            <select id="trip-type">
+                                <option value="roundtrip">Round Trip</option>
+                                <option value="oneway">One Way</option>
+                                <option value="multicity">Multi-City</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label for="from">From</label>
+                            <!-- <input type="text" id="from" placeholder="City or Airport"> -->
+                            <select  id="from">
+                                <option value="" selected>From</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="ahemdabad">Ahemdabad</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="to">To</label>
+                            <select  id="to">
+                                <option value="" selected>To</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="ahemdabad">Ahemdabad</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label for="departure">Departure</label>
+                            <input type="date" id="departure">
+                        </div>
+                        <div class="filter-group">
+                            <label for="return">Return</label>
+                            <input type="date" id="return">
+                        </div>
+                    </div>
+                    
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label for="passengers">Passengers</label>
+                            <select id="passengers">
+                                <option value="1">1 Adult</option>
+                                <option value="2" selected>2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                                <option value="family">Family</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="class">Class</label>
+                            <select id="class">
+                                <option value="economy">Economy</option>
+                                <option value="premium">Premium Economy</option>
+                                <option value="business">Business</option>
+                                <option value="first">First Class</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button class="search-btn" id="search-flights">
+                        <i class="fas fa-search"></i> Search Flights
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="flight-results">
+            <div class="container">
+                <div class="results-header">
+                    <h2 id="results-title">Available Flights</h2>
+                    <div class="sort-options">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by">
+                            <option value="price">Price (Lowest First)</option>
+                            <option value="duration">Duration</option>
+                            <option value="departure">Departure Time</option>
+                            <option value="arrival">Arrival Time</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="flight-cards" id="flight-cards">
+                    <!-- Flight cards will be loaded by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Explore India is dedicated to providing the best travel experiences across India.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> contact@exploreindia.com</p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Explore India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="flights.js"></script>
+</body>
+</html>

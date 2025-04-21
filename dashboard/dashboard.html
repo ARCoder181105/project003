@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore India | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- <link rel="stylesheet" href="/destination/destination.html"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-plane-departure"></i>
+                <h1>Explore India</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-map-marked-alt"></i> Destinations</a></li>
+                <li><a href="#trip-planner"><i class="fas fa-calendar-alt"></i> Plan Trip</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Discover Incredible India</h2>
+                <p>Explore the diverse culture, heritage, and natural beauty of India</p>
+            </div>
+        </section>
+
+        <section class="popular-destinations">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="swiper destination-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Delhi -->
+                    <div class="swiper-slide destination-card" data-destination="delhi">
+                        <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5" alt="Delhi">
+                        <div class="destination-info">
+                            <h3>Delhi</h3>
+                            <div class="ratings">
+                                <span class="rating-pill food">Food: 4.5</span>
+                                <span class="rating-pill safety">Safety: 4.2</span>
+                                <span class="rating-pill behavior">Behavior: 4.0</span>
+                            </div>
+                            <a href="/destination/delhi.html" class="explore-btn">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Chennai -->
+                    <div class="swiper-slide destination-card" data-destination="chennai">
+                        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chennai">
+                        <div class="destination-info">
+                            <h3>Chennai</h3>
+                            <div class="ratings">
+                                <span class="rating-pill food">Food: 4.7</span>
+                                <span class="rating-pill safety">Safety: 4.3</span>
+                                <span class="rating-pill behavior">Behavior: 4.1</span>
+                            </div>
+                            <a href="/destination/chennai.html" class="explore-btn">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Mumbai -->
+                    <div class="swiper-slide destination-card" data-destination="mumbai">
+                        <img src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7" alt="Mumbai">
+                        <div class="destination-info">
+                            <h3>Mumbai</h3>
+                            <div class="ratings">
+                                <span class="rating-pill food">Food: 4.8</span>
+                                <span class="rating-pill safety">Safety: 4.0</span>
+                                <span class="rating-pill behavior">Behavior: 4.2</span>
+                            </div>
+                            <a href="/destination/delhi.html" class="explore-btn">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Jaipur -->
+                    <div class="swiper-slide destination-card" data-destination="jaipur">
+                        <img src="https://plus.unsplash.com/premium_photo-1661963054563-ce928e477ff3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jaipur">
+                        <div class="destination-info">
+                            <h3>Jaipur</h3>
+                            <div class="ratings">
+                                <span class="rating-pill food">Food: 4.6</span>
+                                <span class="rating-pill safety">Safety: 4.5</span>
+                                <span class="rating-pill behavior">Behavior: 4.4</span>
+                            </div>
+                            <a href="destination.html?place=jaipur" class="explore-btn">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Goa -->
+                    <div class="swiper-slide destination-card" data-destination="goa">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2" alt="Goa">
+                        <div class="destination-info">
+                            <h3>Goa</h3>
+                            <div class="ratings">
+                                <span class="rating-pill food">Food: 4.4</span>
+                                <span class="rating-pill safety">Safety: 4.1</span>
+                                <span class="rating-pill behavior">Behavior: 4.3</span>
+                            </div>
+                            <a href="destination.html?place=goa" class="explore-btn">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Varanasi -->
+                    <div class="swiper-slide destination-card" data-destination="varanasi">
+                        <img src="https://media.istockphoto.com/id/534047829/photo/scene-of-river-ganges-varanasi-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=ag4ig0vPQFXxvgEF6Hk50ixPt8VulyT7YkiPrZJv0vY=" alt="Varanasi">
+                        <div class="destination-info">
+                            <h3>Varanasi</h3>
+                            <div class="ratings">
+                                <span class="rating-pill food">Food: 4.3</span>
+                                <span class="rating-pill safety">Safety: 3.9</span>
+                                <span class="rating-pill behavior">Behavior: 4.0</span>
+                            </div>
+                            <a href="/destination/varnasi.html" class="explore-btn">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Kerala -->
+                    <div class="swiper-slide destination-card" data-destination="kerala">
+                        <img src="https://plus.unsplash.com/premium_photo-1697729438401-fcb4ff66d9a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kerala">
+                        <div class="destination-info">
+                            <h3>Kerala</h3>
+                            <div class="ratings">
+                                <span class="rating-pill food">Food: 4.7</span>
+                                <span class="rating-pill safety">Safety: 4.6</span>
+                                <span class="rating-pill behavior">Behavior: 4.5</span>
+                            </div>
+                            <a href="destination.html?place=kerala" class="explore-btn">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Shimla -->
+                    <div class="swiper-slide destination-card" data-destination="shimla">
+                        <img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shimla">
+                        <div class="destination-info">
+                            <h3>Shimla</h3>
+                            <div class="ratings">
+                                <span class="rating-pill food">Food: 4.2</span>
+                                <span class="rating-pill safety">Safety: 4.4</span>
+                                <span class="rating-pill behavior">Behavior: 4.3</span>
+                            </div>
+                            <a href="/destination/shimla.html" class="explore-btn">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Gujarat -->
+                    <div class="swiper-slide destination-card" data-destination="Gujarat">
+                        <img src="https://images.unsplash.com/photo-1615037114501-3f3d7f005628?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shimla">
+                        <div class="destination-info">
+                            <h3>Gujarat</h3>
+                            <div class="ratings">
+                                <span class="rating-pill food">Food: 4.2</span>
+                                <span class="rating-pill safety">Safety: 5</span>
+                                <span class="rating-pill behavior">Behavior: 4.3</span>
+                            </div>
+                            <a href="/destination/gujarat.html" class="explore-btn">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <section class="trip-planner" id="trip-planner">
+            <h2 class="section-title">Plan Your Trip</h2>
+            <div class="planner-options">
+                <div class="planner-card" id="hotels">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Hotels</h3>
+                    <p>Find the perfect place to stay</p>
+                </div>
+                <div class="planner-card" id="flights">
+                    <i class="fas fa-plane"></i>
+                    <h3>Flights</h3>
+                    <p>Book your flights</p>
+                </div>
+                <div class="planner-card" id="trains">
+                    <i class="fas fa-train"></i>
+                    <h3>Trains</h3>
+                    <p>Reserve train tickets</p>
+                </div>
+                <div class="planner-card" id="taxis">
+                    <i class="fas fa-taxi"></i>
+                    <h3>Taxis</h3>
+                    <p>Arrange local transportation</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Explore India is dedicated to providing the best travel experiences across the diverse landscapes of India.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> contact@exploreindia.com</p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Explore India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
